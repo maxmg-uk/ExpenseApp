@@ -1,5 +1,5 @@
 import { useContext, useLayoutEffect } from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, TextInput } from "react-native";
 
 import IconButton from "../components/UI/iconButton";
 import { ExpensesContext } from "../store/expenses-context.js";
