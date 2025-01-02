@@ -9,7 +9,7 @@ const DUMMY_EXPENSES = [
   },
   {
     id: "e2",
-    description: "Big bag of dicks",
+    description: "stuff and also things",
     amount: 28.99,
     date: new Date("2024-12-14"),
   },
