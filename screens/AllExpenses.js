@@ -7,7 +7,7 @@ function AllExpenses() {
   return (
     <ExpensesOutput
       expenses={expensesCtx.expenses}
-      expensesPeriod={"Total"}
+      expensesPeriod={"All time"}
       fallBackText={"No logged expenses"}
     />
   );
