@@ -13,8 +13,10 @@ function expensesReducer(state, action) {
     case "ADD":
       return [action.payload, ...state];
     case "SET":
-      const inverted = action.payload.reverse();
-      return inverted;
+      const sorted = action.payload.sort(
+        (a, b) => new Date(b.date) - new Date(a.date)
+      );
+      return sorted;
     case "UPDATE":
       const updatableExpenseIndex = state.findIndex(
         (expense) => expense.id === action.payload.id
