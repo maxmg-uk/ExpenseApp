@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     marginVertical: 6,
   },
   label: {
-    fontSize: 12,
+    fontSize: 16,
     fontWeight: "bold",
     color: GlobalStyles.colors.primary100,
     marginBottom: 4,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   input: {
     color: GlobalStyles.colors.primary700,
     backgroundColor: GlobalStyles.colors.primary100,
-    borderBottomWidth: 1,
+    borderBottomWidth: 2,
     borderBottomColor: "black",
     borderRadius: 6,
     padding: 6,

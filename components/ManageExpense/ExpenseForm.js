@@ -64,6 +64,15 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
 
   return (
     <View style={styles.form}>
+      <Input
+        label="Description"
+        invalid={!inputs.description.isValid}
+        textInputConfig={{
+          maxLength: 25,
+          onChangeText: inputChangeHandler.bind(this, "description"),
+          value: inputs.description.value,
+        }}
+      />
       <View style={styles.inputRow}>
         <Input
           style={styles.rowInput}
@@ -87,16 +96,6 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
           }}
         />
       </View>
-      <Input
-        label="Description"
-        invalid={!inputs.description.isValid}
-        textInputConfig={{
-          multiline: true,
-          onChangeText: inputChangeHandler.bind(this, "description"),
-          value: inputs.description.value,
-        }}
-      />
-
       {formIsInvalid && (
         <Text style={styles.errorText}>
           Invalid input values, please check your data{" "}
